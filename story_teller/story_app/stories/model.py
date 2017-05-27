@@ -15,9 +15,6 @@ class Story(db.Model):
 class StoryUserAssociation(db.Model):
     __tabename__ = "story_user_association"
 
-    story_id = db.Column(db.Integer(), primary_key=True)
-    user_id = db.Column(db.Integer(), primary_key=True)
+    story_id = db.Column(db.Integer(), primary_key=True, db.ForeignKey("stories.id"))
+    user_id = db.Column(db.Integer(), primary_key=True, db.ForeignKey("users.id"))
     permission = db.Column(db.String(32))
-    create_time = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-    update_time = db.Column(db.DateTime, default=datetime.datetime.utcnow,                                              
-                            onupdate=datetime.datetime.utcnow)
