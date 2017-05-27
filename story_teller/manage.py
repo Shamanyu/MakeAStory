@@ -1,9 +1,16 @@
-from story_app import create_app
+from story_app import create_app, db
+from flask_script import Manager, Shell
 
 
+app = create_app('development')
+manager = Manager(app)
+
+def make_shell_context():
+	return dict(app=app, db=db)
+
+manager.add_command('shell', Shell(make_context=make_shell_context))
 
 if __name__ == '__main__':
-	app = create_app('development')
-	app.run()
+	manager.run()
 
 
