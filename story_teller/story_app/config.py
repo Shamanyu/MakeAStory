@@ -20,7 +20,7 @@ class Config:
 class DevelopmentConfig(Config):
 	DEBUG = True
 	DATABASE_NAME = 'story_teller'
-	SQL_DATABASE_URI = "postgresql://hashy:bambi@localhost:5432/%s" % DATABASE_NAME
+	SQLALCHEMY_DATABASE_URI = "postgresql://hashy:bambi@localhost:5432/%s" % DATABASE_NAME
 
 
 config = {
