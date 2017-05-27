@@ -1,9 +1,9 @@
 from flask import Flask
 from story_app.config import config
 from flask_sqlalchemy import SQLAlchemy
+from core import db
 
 
-db = SQLAlchemy()
 
 def create_app(config_name):
 	app = Flask(__name__)
