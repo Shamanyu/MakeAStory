@@ -7,7 +7,7 @@
 """
 
 from .users import UsersService
-from .roles import RolessService
+from .roles import RolesService
 from .stories import StoriesService
 from .sentences import SentencesService
 
