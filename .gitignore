@@ -1,7 +1,11 @@
 *.pyc
 venv*
 
+# WebStorm ignores
+frontend/.idea
+
 ##Frontend ignores
+
 # dependencies
 frontend/node_modules
 
