@@ -1,6 +1,5 @@
 from flask import Flask
-from story_app.config import config
-from flask_sqlalchemy import SQLAlchemy
+from config import config
 from core import db
 
 

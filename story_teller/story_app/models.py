@@ -6,7 +6,7 @@
     consolidated models module
 """
 
-from .users.models import *
-from .roles.models import *
-from .stories.models import *
-from .sentences.models import *
+from users.model import *
+from roles.model import *
+from stories.model import *
+from sentences.model import *

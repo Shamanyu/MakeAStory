@@ -15,4 +15,4 @@ class User(db.Model):
     update_time = db.Column(db.DateTime, default=datetime.datetime.utcnow,                                              
                             onupdate=datetime.datetime.utcnow)
     create_time = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-    role = db.Relationship("Role")
+    role = db.relationship("Role")

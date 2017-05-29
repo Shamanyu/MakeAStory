@@ -5,7 +5,7 @@ from story_app import db
 class Sentence(db.Model):
     __tablename__ = "sentences"
 
-    story_id = db.Column(db.Integer(), primary_key=True, db.ForeignKey("stories.id"))
+    story_id = db.Column(db.Integer(), db.ForeignKey("stories.id"), primary_key=True)
     user_id = db.Column(db.Integer(), db.ForeignKey("users.id"))
     sentence_number = db.Column(db.Integer(), primary_key=True)
     data = db.Column(db.Text(), nullable=False)
