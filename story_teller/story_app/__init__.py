@@ -1,6 +1,6 @@
 from flask import Flask
-from config import config
-from core import db
+from story_app.config import config
+from story_app.core import db
 
 
 

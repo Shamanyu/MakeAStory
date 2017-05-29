@@ -6,8 +6,8 @@
     story_teller stories package
 """
 
-from .core import Service
-from .models import Story
+from ..core import Service
+from .model import Story
 
 class StoriesService(Service):
 	__model__ = Story

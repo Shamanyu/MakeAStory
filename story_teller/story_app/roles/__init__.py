@@ -6,8 +6,8 @@
     story_teller roles package
 """
 
-from .core import Service
-from .models import Role
+from ..core import Service
+from .model import Role
 
 class RolesService(Service):
 	__model__ = Role
