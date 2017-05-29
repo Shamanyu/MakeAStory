@@ -13,7 +13,7 @@ class Story(db.Model):
 
 
 class StoryUserAssociation(db.Model):
-    __tabename__ = "story_user_association"
+    __tablename__ = "story_user_association"
 
     story_id = db.Column(db.Integer(), primary_key=True, db.ForeignKey("stories.id"))
     user_id = db.Column(db.Integer(), primary_key=True, db.ForeignKey("users.id"))
