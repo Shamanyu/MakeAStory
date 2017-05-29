@@ -15,7 +15,7 @@ from .sentences import SentencesService
 users = UsersService()
 
 #: An instance of the :class:`RolesService` class
-roles = RolessService()
+roles = RolesService()
 
 #: An instance of the :class:`StoriesService` class
 stories = StoriesService()
