@@ -10,7 +10,7 @@ from ..core import Service
 from .model import User
 
 class UsersService(Service):
-	__model__ = User
+    __model__ = User
 
     def __init__(self, *args, **kwargs):
         super(UsersService, self).__init__(*args, **kwargs)

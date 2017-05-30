@@ -10,7 +10,7 @@ from ..core import Service
 from .model import Role
 
 class RolesService(Service):
-	__model__ = Role
+    __model__ = Role
 
     def __init__(self, *args, **kwargs):
         super(RolesService, self).__init__(*args, **kwargs)

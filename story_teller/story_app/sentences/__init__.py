@@ -10,7 +10,7 @@ from ..core import Service
 from .model import Sentence
 
 class SentencesService(Service):
-	__model__ = Sentence
+    __model__ = Sentence
 
     def __init__(self, *args, **kwargs):
         super(SentencesService, self).__init__(*args, **kwargs)
@@ -24,4 +24,4 @@ class SentencesService(Service):
         """
         Return sentence objs for given story in order of sentence number
         """
-        return self.__model__.query.filter_by(**kwargs).order_by(Sentence.sentence_number).all()
+        return self.__model__.query.filter_by(story_id=id).order_by(Sentence.sentence_number).all()
